@@ -73,7 +73,7 @@ function putSign(e){
                     }else if(win[0]=="O" && win[1]=="O" && win[2]=="O"){
                         winner="O";
                         gameOver=true;
-                    }else if(turnCounter==9){
+                    }else if(turnCounter==9 && !gameOver){
                         winner="Draw";
                         gameOver=true;
                     }
