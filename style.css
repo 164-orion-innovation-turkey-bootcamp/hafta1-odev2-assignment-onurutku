@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-family: 'Press Start 2P', cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boxes{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,auto);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.btn{
+    margin-top: 2rem;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: xx-large;
+    border: none;
+}
+.btn:hover{
+    /* background-color: rgb(182, 245, 198);
+    transition: 500ms ease; */
+    cursor: pointer;
+}
+.game{
+    color: green;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.who{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+.box:nth-child(1),.box:nth-child(4),.box:nth-child(7){
+    border-left: none;
+}
+.box:nth-child(1),.box:nth-child(2),.box:nth-child(3){
+    border-top: none;
+}
+.box:nth-child(3),.box:nth-child(6),.box:nth-child(9){
+    border-right: none;
+}
+.box:nth-child(7),.box:nth-child(8),.box:nth-child(9){
+    border-bottom: none;
+}
